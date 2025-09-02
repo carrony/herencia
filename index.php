@@ -23,18 +23,25 @@
 
         $emp1 = new Empleado("4444444", "Ana", "Lopez Jiménez", 35, 
                   "6555555", "analjim@gmail.com", "gerente", 4800);
+        
+        
         echo "<p>El empleado es</p> ";    
-        var_dump($emp1);
+        echo "<table>";
+        echo $emp1;
+        echo "</table>";
+        
 
         echo "<p>La Persona es</p> ";    
-        var_dump($david);
+         echo "<table>";
+        echo $david;
+         echo "</table>";
 
         if ($emp1->esMayorDeEdad()) {
             echo $emp1->getNombre()." es mayor de edad";
         } else {
             echo "{$emp1->getNombre()} NO es mayor de edad";
         }
-        
+
 
     ?>
 

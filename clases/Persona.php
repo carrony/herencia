@@ -6,7 +6,7 @@
         protected $apellidos;
         protected $telefono;
         protected $edad;
-        private $email;
+        protected $email;
 
         // comportamiento
         public function __construct($dni, $nombre, $apellidos, $edad, 
