@@ -15,17 +15,9 @@
 
         public function __toString()
         {
-            return <<<END
-                <tr>
-                    <td> {$this->dni} </td>
-                    <td> {$this->nombre} </td>
-                    <td> {$this->apellidos} </td>
-                    <td> {$this->telefono} </td>
-                    <td> {$this->edad} </td>
-                    <td> {$this->email} </td>
+            return parent::__toString(). <<<END
                     <td> {$this->cargo} </td>
                     <td> {$this->salario} </td>
-                </tr>
             END;
         }
 
